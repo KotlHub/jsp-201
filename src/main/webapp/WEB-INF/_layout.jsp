@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String pageBody = (String) request.getAttribute("page-body");
+    String pageAbout = (String) request.getAttribute("page-about");
     String context = (String) request.getContextPath();
 %>
 <html>
@@ -19,14 +20,14 @@
         <div class="nav-wrapper teal">
             <a href="<%=context%>/" class="brand-logo right">Java-Vape</a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="sass.html">Sass</a></li>
-                <li><a href="badges.html">Components</a></li>
+                <li><a href="<%=context%>/jsp">Jsp</a></li>
+                <li><a href="<%=context%>/filters">Filters</a></li>
                 <li><a href="collapsible.html">JavaScript</a></li>
             </ul>
         </div>
     </nav>
-    <%= context%>
-    <jsp:include page="<%=pageBody%>"></jsp:include>
+
+                <jsp:include page="<%=pageBody%>"></jsp:include>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -51,7 +52,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            © 2014 Copyright Text
+            © 2025 Copyright Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
         </div>
     </div>
