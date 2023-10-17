@@ -1,0 +1,9 @@
+{
+  "DataProviders": {
+    "PlanetScale": {
+      "url": "jdbc:mysql://aws.connect.psdb.cloud/aspdb?sslMode=VERIFY_IDENTITY",
+      "user": "88rfp09kgvng0mflvb3e",
+      "password": "pscale_pw_DYxXxO7CQcWDTRDSTmfIDbDvTb1oMGn8ZjXoOrX0iAT"
+    }
+  }
+}
