@@ -7,6 +7,10 @@ import com.google.inject.servlet.GuiceServletContextListener;
 public class IocContextListener extends GuiceServletContextListener {
     @Override
     protected Injector getInjector() {
-        return Guice.createInjector(new RouterModule(), new ServiceModule());
+        return Guice.createInjector(
+                new RouterModule(),
+                new ServiceModule(),
+                new LoggingModule()
+        ) ;
     }
 }
