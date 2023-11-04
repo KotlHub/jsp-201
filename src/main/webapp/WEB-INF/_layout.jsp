@@ -32,6 +32,9 @@
 
             <li <%= "db.jsp".equals(pageBody) ? "class='active'" : "" %>
             ><a href="<%= context %>/db">DB</a></li>
+
+            <li <%= "spa.jsp".equals(pageBody) ? "class='active'" : "" %>
+            ><a href="<%= context %>/spa">DB</a></li>
         </ul>
     </div>
 </nav>
